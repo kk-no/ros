@@ -4,9 +4,9 @@
 build:
 	cargo bootimage
 
-.PHONY: boot
-boot:
-	qemu-system-x86_64 -drive format=raw,file=target/x86_64-ros/debug/bootimage-ros.bin
+.PHONY: run
+run:
+	cargo run	
 
 .PHONY: lint
 lint:
